@@ -19,7 +19,7 @@ public class Principal
         {
             situacao = "Reprovado";
         }
-
+        
         else if (total < 60)
         {
             situacao = "Recupraçao";
