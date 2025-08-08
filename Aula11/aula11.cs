@@ -5,8 +5,8 @@ public class Principal
     static void Main()
     {
         int Vint = 10;
-        short Vshort = (short)Vint;//Type Cast
+        float Vfloat = (float)Vint;//Type Cast
 
-        Console.WriteLine(Vshort);
+        Console.WriteLine(Vfloat);
     }
 }
