@@ -5,18 +5,19 @@ public class Principal
 
     static void Main()
     {
-        int AlturaQuadrado, BaseQuadrado;
-        int SomaPerimetro;
+        int AlturaRetangulo, BaseRetangulo;
+        int SomaPerimetro, AreaRetangulo;
 
-        Console.WriteLine("Insira o valor da Base do quadrado");
-        BaseQuadrado = int.Parse(Console.ReadLine());
+        Console.WriteLine("Insira o valor da Base do Retangulo");
+        BaseRetangulo = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Insira o valor da Altura do quadrado");
-        AlturaQuadrado = int.Parse(Console.ReadLine());
+        Console.WriteLine("Insira o valor da Altura do Retangulo");
+        AlturaRetangulo = int.Parse(Console.ReadLine());
 
-        SomaPerimetro = BaseQuadrado*2 + AlturaQuadrado*2;
+        AreaRetangulo = BaseRetangulo * AlturaRetangulo;
+        SomaPerimetro = BaseRetangulo * 2 + AlturaRetangulo * 2;
 
-        Console.WriteLine("Perimetro do Quadrado: {0}cm", SomaPerimetro);
+        Console.WriteLine("Área do Retangulo: {0}cm²\nPerimetro do Retangulo: {1}cm", AreaRetangulo, SomaPerimetro);
         
     }
 }
