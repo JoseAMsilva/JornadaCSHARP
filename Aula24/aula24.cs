@@ -10,12 +10,12 @@ public class Principal
         Console.WriteLine("Digite o segundo Valor:");
         v2 = int.Parse(Console.ReadLine());
 
-        res = soma(v1, v2);
+        res = Soma(v1, v2);
 
         Console.WriteLine("A soma de {0} + {1} = {2}", v1, v2, res);
     }
 
-    static int soma(int n1, int n2)
+    static int Soma(int n1, int n2)
     {
         int resultado = n1 + n2;
         return resultado;
