@@ -1,6 +1,6 @@
 using System;
 
-public class Principal
+public class Aula30
 {
     public class Player()
     {
