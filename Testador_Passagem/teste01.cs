@@ -1,54 +1,141 @@
 using System;
 
-class Principal
+public class Pricipal
 {
+    public class Dados
+    {
+        private string Nome;
+        private int idade;
+        private long telefone;
+        private string partida;
+        private string destino;
+
+        public void SetNome(string nome)
+        {
+            this.Nome = nome;
+        }
+        public string GetNome()
+        {
+            return Nome;
+        }
+        public void SetIdade(int idade)
+        {
+            if (idade < 0)
+            {
+                throw new ArgumentException("Idade não pode ser negativa.");
+            }
+            else if (idade > 120)
+            {
+                throw new ArgumentException("Idade não pode ser maior que 120.");
+            }
+            else if (idade < 18)
+            {
+                throw new ArgumentException("Idade não pode ser menor que 18.");
+            }
+            else
+            {
+                this.idade = idade;
+            }
+        }
+        public int GetIdade()
+        {
+            return idade;
+        }
+        public void SetTelefone(long telefone)
+        {
+            this.telefone = telefone;
+        }
+        public long GetTelefone()
+        {
+            return telefone;
+        }
+        public void SetPartida(string partida)
+        {
+            this.partida = partida;
+        }
+        public string GetPartida()
+        {
+            return partida;
+        }
+        public void SetDestino(string destino)
+        {
+            this.destino = destino;
+        }
+        public string GetDestino()
+        {
+            return destino;
+        }
+    }
+    public class Passagem : Dados
+    {
+        private float Preco;
+        private string Tipo;
+        public Passagem(string tipo)
+        {
+            this.Preco = 0.0f;
+            this.Tipo = tipo;
+        }
+
+        public void SetPreco()
+        {
+            if (Tipo == "Economica")
+            {
+                Preco = 100.0f;
+            }
+            else if (Tipo == "Executiva")
+            {
+                Preco = 200.0f;
+            }
+            else if (Tipo == "Primeira Classe")
+            {
+                Preco = 300.0f;
+            }
+            else
+            {
+                throw new ArgumentException("Tipo de passagem inválido.");
+            }
+        }
+        public void ExibirInfoPassagem()
+        {
+            Console.WriteLine("Nome:.............{0}", GetNome());
+            Console.WriteLine("Idade:............{0}", GetIdade());
+            Console.WriteLine("Telefone:.........{0}", GetTelefone());
+            Console.WriteLine("Partida:..........{0}", GetPartida());
+            Console.WriteLine("Destino:..........{0}", GetDestino());
+            Console.WriteLine("Tipo de Passagem: {0}", Tipo);
+            Console.WriteLine("Preço:............{0}", Preco);
+        }
+    }
     static void Main()
     {
-        string nome, endereco;
-        int idade;
-        long numero_de_telefone;
-        string destino;
-        double valor_passagem = 150.00;
-        double taxa = 0.1;
-        double valor_total;
-
-        Console.Write("Insira seu nome:\n");
-        nome = Console.ReadLine();
-
-        Console.Write("insira a sua idade:\n");
-        idade = int.Parse(Console.ReadLine());
-        bool maioridade = (idade >= 18);
-
-        Console.Write("Insira a sua ciade:\n");
-        endereco = Console.ReadLine();
-
-        if (maioridade)
+        Console.WriteLine("Digite o nome do passageiro:");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Digite a idade do passageiro:");
+        int idade = int.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o telefone do passageiro:");
+        long telefone = long.Parse(Console.ReadLine());
+        Console.WriteLine("Digite a partida do passageiro:");
+        string partida = Console.ReadLine();
+        Console.WriteLine("Digite o destino do passageiro:");
+        string destino = Console.ReadLine();
+        Console.WriteLine("Digite o tipo de passagem (Economica, Executiva, Primeira Classe):");
+        string tipoPassagem = Console.ReadLine();
+        if (tipoPassagem != "Economica" && tipoPassagem != "Executiva" && tipoPassagem != "Primeira Classe")
         {
-            Console.Write("insira seu numero de telefone:\n");
-            numero_de_telefone = long.Parse(Console.ReadLine());
-
-            Console.Write("Insira o seu destino:\n");
-            destino = Console.ReadLine();
-
-            Console.WriteLine("\nValor da Viagem {0:0,0.00}\nPorém nós cobramos uma taxa de {1:P} para viagens com este destino\n",valor_passagem, taxa);
-
-            valor_total = valor_passagem + (valor_passagem * taxa);
-
-            Console.WriteLine("Confira seus dados\n....................................\n");
-            Console.WriteLine("\nValor da Viagem {0:0,0.00}\nPorém nós cobramos uma taxa de {1:P} para viagens com este destino\n",valor_passagem, taxa);
-            Console.WriteLine("Seu nome...............{0, 5}\n", nome);
-            Console.WriteLine("Origem.................{0, 5}\n", endereco);
-            Console.WriteLine("Destino................{0, 5}\n", destino);
-            Console.WriteLine("Sua idade..............{0, 5}\n", idade);
-            Console.WriteLine("Numero de telefone.....{0, 5}\n", numero_de_telefone);
-            Console.WriteLine("Valor da viagem........{0, 5:c}\n", valor_total);
-
-            Console.WriteLine("....................................\n");
+            Console.Clear();
+            Console.WriteLine("Tipo de passagem inválido. Por favor, escolha entre Economica, Executiva ou Primeira Classe.");
+            return;
         }
-        else
-        {
-            Console.WriteLine("Desculpe {0} mas você precisa ser maior de idade para comprar uma passagem\n", nome);
-        }
-
+        Passagem passagem = new Passagem(tipoPassagem);
+        passagem.SetNome(nome);
+        passagem.SetIdade(idade);
+        passagem.SetTelefone(telefone);
+        passagem.SetPartida(partida);
+        passagem.SetDestino(destino);
+        passagem.SetPreco();
+        
+        Console.Clear();
+        Console.WriteLine("Informações da Passagem:");
+        passagem.ExibirInfoPassagem();
     }
 }
