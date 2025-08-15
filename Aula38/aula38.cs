@@ -45,6 +45,5 @@ public class Aula38
         Ref = derivada1;
         Ref.Info();//Chamando o método Info da classe Derivada1, usando o objeto de Referência, que sobrescreve o método Info da classe Base
         derivada2.Info();//Chamando o método Info da classe Derivada2, que sobrescreve o método da classe Base
-    
     }
 }
