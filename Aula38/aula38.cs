@@ -7,8 +7,6 @@ public class Base
         Console.WriteLine("Construtor da classe Base");//Primeiro a ser chamado
     }
     virtual public void Info(){}//Método virtual que pode ser sobrescrito
-    
-
 }
 public class Derivada1 : Base
 {
@@ -20,7 +18,6 @@ public class Derivada1 : Base
     {
         Console.WriteLine("Derivada 1");
     }
-
 }
 
 public class Derivada2 : Derivada1
