@@ -34,10 +34,12 @@ public class Calcular
     {
         if (n < 2)
         {
+            // Caso Base
             return n;
         }
         else
         {
+            // Passo Recursivo (Chamada a si mesmo com um problema menor até encontrar o caso base)
             return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
 
