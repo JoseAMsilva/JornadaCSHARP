@@ -9,7 +9,7 @@ public class Galinha
         this.Nome = Nome;
         this.TotalOvos = 0;
     }
-    public Ovo botar()
+    public Ovo Botar()
     {
         this.TotalOvos++;
         return new Ovo(this.TotalOvos, this.Nome);
@@ -41,12 +41,12 @@ public class Aula46
         Galinha G2 = new Galinha("Margarida");
         Galinha G3 = new Galinha("Pintadinha");
 
-        G1.botar();
-        G1.botar();
-        G2.botar();
-        G3.botar();
-        G3.botar();
-        G3.botar();
+        G1.Botar();
+        G1.Botar();
+        G2.Botar();
+        G3.Botar();
+        G3.Botar();
+        G3.Botar();
         G1.Info();
         G2.Info();
         G3.Info();
