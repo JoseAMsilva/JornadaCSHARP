@@ -30,14 +30,26 @@ public class Calcular
         // 2. Passo Recursivo (Chamada a si mesmo com um problema menor)
         return n * Fatorial(n - 1);
     }
+    public int Fibonacci(int n)
+    {
+        if (n < 2)
+        {
+            return n;
+        }
+        else
+        {
+            return Fibonacci(n - 1) + Fibonacci(n - 2);
+        }
+
+    }
 }
 public class Aula48
 {
     static void Main()
     {
-        int fatorial;
+        int fibonacci;
         Calcular calcular = new Calcular();
-        fatorial = calcular.Fatorial(5);
-        Console.WriteLine(fatorial);
+        fibonacci = calcular.Fibonacci(10);
+        Console.WriteLine(fibonacci);
     }
 }
