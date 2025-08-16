@@ -27,7 +27,7 @@ public class Aula27
     {
         double soma;
         Calcular calculo = new Calcular();
-        soma = calculo.Somar(10, 20.546, 33.53, 47);
+        soma = calculo.Somar(10, 20.54, 33.53, 47);
         Console.WriteLine(soma);
     }
 }
