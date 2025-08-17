@@ -135,7 +135,7 @@ public class Passagem : Dados
             throw new ArgumentException("Tipo de passagem inválido.");
         }
     }
-    public void InfoPassagem()
+    public void Info()
     {
         Console.WriteLine("Nome:.............{0}", Nome);
         Console.WriteLine("Idade:............{0}", Idade);
@@ -182,7 +182,7 @@ public class Pricipal
 
             Console.Clear();
             Console.WriteLine("Informações da Passagem:");
-            passagem.InfoPassagem();
+            passagem.Info();
         }
         catch (CustomException ex)
         {
