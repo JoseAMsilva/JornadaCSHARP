@@ -40,8 +40,8 @@ class Aula53
         int idade = Convert.ToInt32(Console.ReadLine());
         try
         {
-            Perfil p = new Perfil(nome, idade);
-            p.Info();
+            Perfil perfil = new Perfil(nome, idade);
+            perfil.Info();
         }
         catch (CustomException e)
         {
