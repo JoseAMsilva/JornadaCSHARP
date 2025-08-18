@@ -33,9 +33,9 @@ class Aula55
             Console.WriteLine("O valor " + valor + " não existe no Dictionary");
         }
         Dictionary <int, string>.ValueCollection valores = veiculos.Values;
-        foreach (string V in valores)
+        foreach (string v in valores)
         {
-            Console.WriteLine(V);
+            Console.WriteLine(v);
         }
     }
 }
