@@ -1,23 +1,48 @@
 using System;
 using System.Collections.Generic;
 
-class Aula58
+class Aula57
 {
     static void Main(string[] args)
     {
-        Queue<string> fila = new Queue<string>();
-        int tamanho = fila.Count;
-        fila.Enqueue("Ana");
-        fila.Enqueue("Maria");
-        fila.Enqueue("João");
-        fila.Enqueue("Pedro");
-        foreach (string n in fila)
+        List<string> carros = new List<string>();
+        List<string> carros2 = new List<string>();
+
+        carros.Capacity = 10;
+
+        carros.Add("Vectra");
+        carros.Add("Gol");
+        carros.Add("Fox");
+        carros.Add("Civic");
+
+        carros2.AddRange(carros);
+        Console.WriteLine("Imprimindo Carros2:");
+
+        if (carros.Contains("Gol"))
         {
-            Console.WriteLine(n);
+            Console.WriteLine("Existe");
         }
-        string pessoa = fila.Dequeue();
-        Console.WriteLine("Pessoa atendida: " + pessoa);
-        Console.WriteLine("Proxima pessoa na fila: " + fila.Peek());
-        Console.WriteLine("Tamanho da fila: " + fila.Count);
+        else
+        {
+            Console.WriteLine("Não existe");
+        }
+        int posicao = carros.IndexOf("Gol");
+        Console.WriteLine("Posição do Gol: " + carros.IndexOf("Gol"));
+
+        carros.Insert(posicao, "Impala");
+
+        carros.Reverse();
+       
+        carros.Sort();
+        Console.WriteLine("Imprimindo Carros:");
+
+        foreach (string c in carros)
+        {
+            Console.WriteLine(c);
+        }
+        
+        int Tamanho = carros.Count;
+        Console.WriteLine("Tamanho da lista: " + Tamanho);
+
     }
 }
