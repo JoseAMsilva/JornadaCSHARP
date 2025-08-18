@@ -55,9 +55,9 @@ class Aula55
         veiculos.AddAfter(no2, "Avião");
 
         Console.WriteLine("........................");
-        foreach (string v in veiculos)
+        foreach (string n in veiculos)
         {
-            Console.WriteLine(v);
+            Console.WriteLine(n);
         }
         Console.WriteLine("........................");
         if (veiculos.Count == 0)
