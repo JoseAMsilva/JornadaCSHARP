@@ -1,0 +1,15 @@
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.AssemblyInfoInputs.cache
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.AssemblyInfo.cs
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.csproj.CoreCompileInputs.cache
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.sourcelink.json
+D:\C#\Aprendizagem\Testador_Passagem\bin\Debug\net8.0\Testador_Passagem.exe
+D:\C#\Aprendizagem\Testador_Passagem\bin\Debug\net8.0\Testador_Passagem.deps.json
+D:\C#\Aprendizagem\Testador_Passagem\bin\Debug\net8.0\Testador_Passagem.runtimeconfig.json
+D:\C#\Aprendizagem\Testador_Passagem\bin\Debug\net8.0\Testador_Passagem.dll
+D:\C#\Aprendizagem\Testador_Passagem\bin\Debug\net8.0\Testador_Passagem.pdb
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.dll
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\refint\Testador_Passagem.dll
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.pdb
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\Testador_Passagem.genruntimeconfig.cache
+D:\C#\Aprendizagem\Testador_Passagem\obj\Debug\net8.0\ref\Testador_Passagem.dll
