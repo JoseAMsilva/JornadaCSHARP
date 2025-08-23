@@ -11,7 +11,7 @@ namespace Settings
         {
             this.Tipo = tipo;
         }
-
+        
         public void SetPreco()
         {
             switch (this.Tipo)

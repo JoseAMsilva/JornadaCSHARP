@@ -2,17 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework> <!-- Você pode usar net6.0 ou net7.0 se preferir -->
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <!-- Define a classe Principal como o ponto de entrada, já que seu Main está nela -->
     <StartupObject>Principal</StartupObject>
   </PropertyGroup>
-
-  <!-- 
-    Projetos modernos incluem automaticamente todos os arquivos .cs na mesma pasta.
-    No entanto, se você tiver uma exceção personalizada como 'CustomException',
-    certifique-se de que o arquivo (ex: CustomException.cs) também está na pasta do projeto.
-  -->
-
 </Project>

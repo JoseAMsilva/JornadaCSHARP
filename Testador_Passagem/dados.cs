@@ -1,8 +1,5 @@
 namespace Dados
 {
-    /// <summary>
-    /// Classe base para armazenar informações de uma entidade, como um passageiro.
-    /// </summary>
     public class Dados
     {
         public string Nome { get; set; } = string.Empty;
