@@ -12,7 +12,7 @@ public class Principal
 
         SomaPerimetro = LadoQuadrado * 4;
 
-        AreaQuadrado = LadoQuadrado * LadoQuadrado;
+        AreaQuadrado = Math.Pow(LadoQuadrado);
 
         Console.WriteLine("Area do Quadrado: {0:F2}cm²\nPerimetro do Quadrado {1:F2}cm", AreaQuadrado, SomaPerimetro);
     }
